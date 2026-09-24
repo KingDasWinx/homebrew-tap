@@ -1,25 +1,25 @@
 class Dexo < Formula
   desc "A local-first database workbench for PostgreSQL and MySQL in the terminal"
   homepage "https://github.com/kingdaswinx/Dexo"
-  version "1.2.0"
+  version "1.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/kingdaswinx/Dexo/releases/download/v1.2.0/dexo-aarch64-apple-darwin.tar.gz"
-      sha256 "e8bc2f288ab14e374b265575764ae2ddd624887bbda21b3fd70733f4e14f413c"
+      url "https://github.com/kingdaswinx/Dexo/releases/download/v1.3.0/dexo-aarch64-apple-darwin.tar.gz"
+      sha256 "1ac565305271e4840e8d2470adad5428d5e5cc7a03f376683eb801bb36e07c56"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kingdaswinx/Dexo/releases/download/v1.2.0/dexo-x86_64-apple-darwin.tar.gz"
-      sha256 "a784b1eefbf759f983a2eded23fe1989eecdee1928a5c3439cf5c2af6cd7487d"
+      url "https://github.com/kingdaswinx/Dexo/releases/download/v1.3.0/dexo-x86_64-apple-darwin.tar.gz"
+      sha256 "907c1e1672be70f4b9512d8058585c92979ec5639a24dbec3d654cb5a21726bf"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/kingdaswinx/Dexo/releases/download/v1.2.0/dexo-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "6dc7ee825c8391e2f9e7cb1629867ef9e62872ba9f5f5d5b004d7fb0cad7de21"
+      url "https://github.com/kingdaswinx/Dexo/releases/download/v1.3.0/dexo-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ea43ff7be15b0c2be55fce4600bf46e555855efe9dabf79fa71adc0ccbdfeebe"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kingdaswinx/Dexo/releases/download/v1.2.0/dexo-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "942cf4a3cc18630b6e4610c349dddeffe85e8a18bb624ee1dfd88d02b54de9ee"
+      url "https://github.com/kingdaswinx/Dexo/releases/download/v1.3.0/dexo-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "cdc11e09e7e027c3a24b48417519454af1f76e36cf7d5940306567b1dc172f45"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
