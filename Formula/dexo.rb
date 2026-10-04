@@ -1,25 +1,25 @@
 class Dexo < Formula
-  desc "A local-first database workbench for PostgreSQL and MySQL in the terminal"
+  desc "A local-first database workbench for PostgreSQL, MySQL and SQLite in the terminal"
   homepage "https://github.com/kingdaswinx/Dexo"
-  version "1.4.1"
+  version "1.4.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/kingdaswinx/Dexo/releases/download/v1.4.1/dexo-aarch64-apple-darwin.tar.gz"
-      sha256 "c5175d693ddb7380f3683d94762c3fb75c5020e6842d6d75a8667500ac9759d7"
+      url "https://github.com/kingdaswinx/Dexo/releases/download/v1.4.2/dexo-aarch64-apple-darwin.tar.gz"
+      sha256 "d1c7ea6ced657aaf2a70704a991ae844212a2aff5bc9a0b06964ca462e53a2fd"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kingdaswinx/Dexo/releases/download/v1.4.1/dexo-x86_64-apple-darwin.tar.gz"
-      sha256 "b3ba9726ee725bd3e72de9361714d60a639a45e0933591cd781a1dbf5e1eb869"
+      url "https://github.com/kingdaswinx/Dexo/releases/download/v1.4.2/dexo-x86_64-apple-darwin.tar.gz"
+      sha256 "7b39fb01193465419fce0959ce6fc71c3380a9b3b86d0fff77f3385695df0d47"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/kingdaswinx/Dexo/releases/download/v1.4.1/dexo-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "1e777f0ad5f91ced7b1e668a9f5e081c86037af6afa06b5f8d79419f0179f50e"
+      url "https://github.com/kingdaswinx/Dexo/releases/download/v1.4.2/dexo-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "8497bb5eddac2fbc1676f67bfe74c16b40e6a90187873aac596e8e594a83cd8a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kingdaswinx/Dexo/releases/download/v1.4.1/dexo-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "ca68bae8b127ef45e4fb2f285235c68a99eb7e8ca3d17e3d549e13ac5020b4a2"
+      url "https://github.com/kingdaswinx/Dexo/releases/download/v1.4.2/dexo-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "10c4146524882bf0c1f2b32fbb13db708878d08c7770d80cd1d181709401dd49"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
